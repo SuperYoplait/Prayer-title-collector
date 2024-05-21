@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///Users/junhopark/Desktop/Code/demo/src/main/resources/static/pray.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>WECCLESIA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+    <!-- Intro -->
+    <div id="intro" class="">
+        <h1>WECCLESIA</h1>
+        <p>HOW TO YOU PRAY?</p>
+        <ul class="actions">
+            <li><a href="#main"
+                   class="button icon solid solo fa-arrow-down scrolly">continue</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="file:///Users/junhopark/Desktop/Code/demo/src/main/resources/static/pray.html" class="logo">HOW TO YOU
+            PRAY?</a>
+    </header>
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Footer -->
+        <h2>기도제목 제출하기</h2>
+        <footer id="footer">
+
+            <form class="container" action="/pray/create", method="post">
+                <div class="row gtr-uniform">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="Name" id="Name" value="" placeholder="이름">
+                    </div>
+                    <!--<div class="col-6 col-12-xsmall">
+                        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email">
+                    </div> -->
+                    <!-- Break -->
+                    <div class="col-12">
+                        <input type="checkbox" id="Audit" name="Audit" checked="">
+                        <input type="hidden" name="_Audit" value="on">
+                        <label for="Audit">감사</label>
+
+                        <input type="checkbox" id="Mediator" name="Mediator">
+                        <input type="hidden" name="_Mediator" value="on">
+                        <label for="Mediator">중보</label>
+
+                        <input type="checkbox" id="Etc" name="Etc">
+                        <input type="hidden" name="_Etc" value="on">
+                        <label for="Etc">기타</label>
+
+                    </div>
+                    <!-- Break -->
+
+                    <div class="col-12">
+                        <input type="radio" id="open" name="IsOpen">
+                        <label for="open">공개</label>
+
+                        <input type="radio" id="close" name="IsOpen" checked="">
+                        <label for="close">비공개</label>
+                    </div>
+                </div>
+
+                <!-- Break -->
+                <div class="col-12">
+                        <textarea name="Context" id="Context" placeholder="기도제목을 적어주세요"
+                                  rows="6"></textarea>
+                </div>
+
+
+                <!-- Break -->
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><input type="submit" value="전송하기" class="primary"></li>
+                        <!-- <li><input type="reset" value="Reset"></li>-->
+                    </ul>
+                </div>
+            </form>
+
+        </footer>
+
+   </div>
+
+
+
+   <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>© wecclesia</li>
+        </ul>
+    </div>
+
+</div>
+<div class="bg fixed" style="transform: none;"></div>
+</div>
+
+<!-- Scripts -->
+<script src="./pray_files/jquery.min.js"></script>
+<script src="./pray_files/jquery.scrollex.min.js"></script>
+<script src="./pray_files/jquery.scrolly.min.js"></script>
+<script src="./pray_files/browser.min.js"></script>
+<script src="./pray_files/breakpoints.min.js"></script>
+<script src="./pray_files/util.js"></script>
+<script src="./pray_files/main.js"></script>
+
+
+</body>
+</html>
