@@ -1,45 +1,23 @@
 import React from 'react';
 import './App.css';
-import { Card, CardHeader, CardBody, CardFooter, Text, SimpleGrid, Heading, Button } from '@chakra-ui/react'
+import IndexPage from './Landing/Landing'
+import PrayLanading from './Pray/PrayLanding.js'
+import PrayInsert from './Pray/PrayInsert.js'
+
+import { Route, Routes } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react'
+
 
 function App() {
+
   return (
-    <div className="App"><SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-      <Card align='center'>
-        <CardHeader>
-          <Heading size='md'> Customer dashboard</Heading>
-        </CardHeader>
-        <CardBody>
-          <Text>View a summary of all your customers over the last month.</Text>
-        </CardBody>
-        <CardFooter>
-          <Button>View here</Button>
-        </CardFooter>
-      </Card>
-      <Card align='center'>
-        <CardHeader>
-          <Heading size='md'> Customer dashboard</Heading>
-        </CardHeader>
-        <CardBody>
-          <Text>View a summary of all your customers over the last month.</Text>
-        </CardBody>
-        <CardFooter>
-          <Button>View here</Button>
-        </CardFooter>
-      </Card>
-      <Card align='center'>
-        <CardHeader>
-          <Heading size='md'> Customer dashboard</Heading>
-        </CardHeader>
-        <CardBody>
-          <Text>View a summary of all your customers over the last month.</Text>
-        </CardBody>
-        <CardFooter>
-          <Button>View here</Button>
-        </CardFooter>
-      </Card>
-    </SimpleGrid>
-    </div>
+    <ChakraProvider>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/PrayLanding" element={<PrayLanading />}></Route>
+        <Route path="/PrayInsert" element={<PrayInsert />}></Route>
+      </Routes>
+    </ChakraProvider>
   );
 }
 
